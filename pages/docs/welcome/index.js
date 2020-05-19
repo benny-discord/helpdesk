@@ -1,19 +1,28 @@
-import ActionCard from '../components/ActionCard'
+import ActionCard from '../../../components/ActionCard'
+import BackButton from '../../../components/_BackButton'
 import Link from 'next/link'
 import { Grid, Row, Col } from 'react-flexbox-grid/dist/react-flexbox-grid'
+
+// CHANGE INFO HERE
+const id = "welcome" // due to some problems, this MUST be the same as the folder name
+const name = "Welcome!"
+const description = "Welcome to your new helpdesk."
+// CHANGE INFO HERE
 
 export default function ({ props, categories }) {
     return (
         <div style={{ textAlign: "center", padding: "4%" }}>
-            <h1>Wizard Help</h1>
+            <h1>{name}</h1>
 
-            <p>Find all the information you need to use Wizard.</p>
+            <p>{description}</p>
+
+            <BackButton text />
 
             <Grid fluid>
                 <Row>
                     {categories.map(c=>{
                         return <Col xs={12} sm={6} md={4}>
-                            <Link href={`/docs/${c.fname}`}>
+                            <Link href={`/docs/${id}/${c.fname}`}>
                                 <ActionCard title={c.name}>
                                     <p>
                                         {c.description}
@@ -33,18 +42,18 @@ export async function getStaticProps () {
 
     const fs = require('fs')
     const path = require('path')
-    const postsDirectory = path.join(process.cwd(), 'pages', 'docs')
+    const postsDirectory = path.join(process.cwd(), 'pages', 'docs', id)
     const filenames = fs.readdirSync(postsDirectory, { withFileTypes: true })
-        .filter(d => d.isDirectory())
+        .filter(dir => path.resolve(postsDirectory, dir.name).match(/.*\.md$/))
     
     await (async function(){
         for (let i = 0; i < filenames.length; i++) {
             let ux = filenames[i]
     
-            import(`./docs/${ux.name}/index.js`)
+            import(`./${ux.name}`)
                 .then(x => {
                     returned.push({
-                        fname: ux.name,
+                        fname: ux.name.replace(".md", ""),
                         name: x.info.name,
                         description: x.info.description
                     })
@@ -57,4 +66,9 @@ export async function getStaticProps () {
             categories: returned
         }
     }
+}
+
+export const info = {
+    name: name,
+    description: description
 }

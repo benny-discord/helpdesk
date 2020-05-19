@@ -8,8 +8,15 @@
     "start": "next start"
   },
   "dependencies": {
+    "@mdx-js/loader": "^1.6.1",
+    "@next/mdx": "^9.4.1",
+    "classnames": "^2.2.6",
+    "fs": "^0.0.1-security",
     "next": "9.3.5",
+    "prop-types": "^15.7.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "react-flexbox-grid": "^2.1.2",
+    "sass": "^1.26.5"
   }
 }

@@ -1,0 +1,41 @@
+$warning: #FF8300;
+$destructive: #f04747;
+$success: #43b581;
+$info: #2ba9cd;
+
+@mixin alert($color) {
+	border-color: $color;
+	background-color: change-color($color, $alpha: 0.15);
+	
+	.title {
+		color: darken($color, 20%);
+	}
+}
+
+.alert {
+	margin-bottom: 10px;
+	border-left: solid 4px;
+	border-radius: 4px;
+	padding: 0.8rem;
+	
+	.title {
+		margin: 0 0 10px;
+		font-size: 20px;
+	}
+	
+	&.info {
+		@include alert($info);
+	}
+	
+	&.success {
+		@include alert($success);
+	}
+	
+	&.destructive {
+		@include alert($destructive);
+	}
+	
+	&.warn {
+		@include alert($warning);
+	}
+}

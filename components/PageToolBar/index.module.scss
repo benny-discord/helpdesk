@@ -1,0 +1,23 @@
+$background-primary: #363438;
+$background-secondary: #272629;
+$background-secondary-alt: #222124;
+$background-tertiary: #18171a;
+$background-priority: #344556;
+
+.appbar {
+	box-sizing: border-box;
+	padding: 28px 16px;
+	padding-bottom: 60px;
+
+	.spacer {
+		flex: 1 0 auto;
+	}
+
+	.title {
+		text-align: center;
+		color: #ffffff;
+		font-size: 32px;
+		font-weight: 700;
+		display: block;
+	}
+}
