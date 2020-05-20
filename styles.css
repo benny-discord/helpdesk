@@ -26,6 +26,10 @@ p {
     box-sizing: border-box;
 }
 
+h2 {
+    margin-top: 40px;
+}
+
 code {
     display: block;
     margin: 4px 0;

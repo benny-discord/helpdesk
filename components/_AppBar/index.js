@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styles from './index.module.scss'
-import Button from '../Button'
+import Button from '../NButton'
 
 class AppBar extends Component {
     render() {
@@ -16,7 +16,7 @@ class AppBar extends Component {
 
                 <div className={styles["spacer"]}></div>
 
-                <Button>
+                <Button disabled>
                     Dashboard
                 </Button>
             </div>

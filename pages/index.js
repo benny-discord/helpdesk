@@ -1,7 +1,29 @@
 import CategoryList from '../components/_CategoryList'
 import Head from 'next/head'
+import ActionCard from '../components/ActionCard'
+import Link from 'next/link'
+import { Grid, Row, Col } from 'react-flexbox-grid/dist/react-flexbox-grid'
 
 export default function ({ props, categories }) {
+    const additions = {
+        gettingstarted: [
+            
+        ],
+        notfound: [
+            {
+                name: "Support Server",
+                description: "Report bugs and request additional support here.",
+                link: "/"
+            },
+            {
+                name: "Dashboard",
+                description: "Explorer the dashboard and learn the features yourself.",
+                link: "/",
+                disabled: true
+            }
+        ]
+    }
+
     return (
         <div style={{ textAlign: "center", padding: "4%" }}>
             <Head>
@@ -12,7 +34,55 @@ export default function ({ props, categories }) {
 
             <p>Find all the information you need to use Wizard.</p>
 
+            {true == false &&
+            <>
+            <h2>
+                New? Learn these basics.
+            </h2>
+
+            <Grid fluid>
+                <Row>
+                    {additions.gettingstarted.map(c=>{
+                        return <Col xs={12} sm={6} md={4} style={{ padding: 8 }}>
+                            <Link href={c.link}>
+                                <ActionCard title={c.name} style={{ height: "100%" }}>
+                                    <p>
+                                        {c.description}
+                                    </p>
+                                </ActionCard>
+                            </Link>
+                        </Col>
+                    })}
+                </Row>
+            </Grid>
+            </>
+            }
+
+            <h2>
+                All Categories
+            </h2>
+
             <CategoryList items={categories} />
+
+            <h2>
+                Can't find what you're looking for?
+            </h2>
+
+            <Grid fluid>
+                <Row>
+                    {additions.notfound.map(c=>{
+                        return <Col xs={12} sm={6} md={4} style={{ padding: 8 }}>
+                            <Link href={c.link}>
+                                <ActionCard disabled={c.disabled == true} title={c.name} style={{ height: "100%" }}>
+                                    <p>
+                                        {c.description}
+                                    </p>
+                                </ActionCard>
+                            </Link>
+                        </Col>
+                    })}
+                </Row>
+            </Grid>
         </div>
     );
 }

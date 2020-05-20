@@ -29,3 +29,9 @@ $background-priority: #344556;
 		}
 	}
 }
+
+@media screen and (max-width: 575px) {
+	.appbar .title {
+		font-size: 22px;
+	}
+}
