@@ -27,7 +27,11 @@ p {
 }
 
 h2 {
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+h3 {
+    margin-top: 20px;
 }
 
 code {
@@ -37,6 +41,13 @@ code {
     border-radius: 4px;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 8px;
+}
+
+pre {
+    display: inline;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 3px;
 }
 
 blockquote {
@@ -60,4 +71,37 @@ blockquote::before {
     width: 6px;
     height: 100%;
     background-color: rgba(255, 255, 255, .1);
+}
+
+#table-of-contents + ul li {
+    opacity: 0.6;
+    transition: opacity 120ms;
+}
+
+#table-of-contents + ul li a {
+    color: #ffffff !important;
+    border-bottom: none !important;
+    text-decoration: none;
+}
+
+#table-of-contents + ul li:hover {
+    opacity: 1;
+}
+
+img.emoji {
+    width: 1.375em;
+    height: 1.375em;
+}
+
+a {
+    color: #3db588;
+    opacity: .7;
+    text-decoration: none;
+    border-bottom: dotted 1px #93d6bd;
+    transition: opacity 150ms;
+}
+
+a:hover {
+    opacity: 1;
+    border-bottom: solid 1px #3db588;
 }

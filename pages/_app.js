@@ -22,6 +22,11 @@ const components = {
             {props.children}
         </code>
     ),
+    inlineCode: props => (
+        <pre>
+            {props.children}
+        </pre>
+    ),
     blockquote: props => (
         <blockquote>
             {props.children}

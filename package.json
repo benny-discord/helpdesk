@@ -10,6 +10,7 @@
   "dependencies": {
     "@mdx-js/loader": "^1.6.1",
     "@next/mdx": "^9.4.1",
+    "add": "^2.0.6",
     "classnames": "^2.2.6",
     "fs": "^0.0.1-security",
     "ip": "^1.1.5",
@@ -18,6 +19,13 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-flexbox-grid": "^2.1.2",
-    "sass": "^1.26.5"
+    "remark-emoji": "^2.1.0",
+    "remark-kbd": "^1.0.21",
+    "remark-slug": "^6.0.0",
+    "remark-toc": "^7.0.0",
+    "remark-twemoji": "^0.1.1",
+    "sass": "^1.26.5",
+    "twemoji": "^13.0.0",
+    "yarn": "^1.22.4"
   }
 }
