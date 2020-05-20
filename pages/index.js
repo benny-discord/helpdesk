@@ -5,7 +5,7 @@ import ActionCard from '../components/ActionCard'
 import Link from 'next/link'
 import { Grid, Row, Col } from 'react-flexbox-grid/dist/react-flexbox-grid'
 
-export default function ({ props, categories, i }) {
+export default function ({ props, categories }) {
     const additions = {
         gettingstarted: [
             
@@ -30,10 +30,6 @@ export default function ({ props, categories, i }) {
             <Head>
                 <title>Wizard Help</title>
             </Head>
-
-            <span style={{ display: "none" }}>
-                {i}
-            </span>
 
             <h1>Wizard Help</h1>
 
@@ -120,8 +116,7 @@ export async function getStaticProps () {
         
     return {
         props: {
-            categories: returned,
-            i: ip.address()
+            categories: returned
         }
     }
 }
