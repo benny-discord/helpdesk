@@ -21,6 +21,13 @@ $background-priority: #344556;
 		color: #ffffff;
 		font-size: 28px;
 		font-weight: 700;
+		cursor: pointer;
+		opacity: .8;
+		transition: opacity 120ms;
+
+		&:hover {
+			opacity: 1;
+		}
 		
 		.title-alt {
 			margin-left: 8px;
