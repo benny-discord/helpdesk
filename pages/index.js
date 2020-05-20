@@ -14,7 +14,7 @@ export default function ({ props, categories }) {
             {
                 name: "Support Server",
                 description: "Report bugs and request additional support here.",
-                link: "/"
+                link: "https://discord.gg/Sq5feYC"
             },
             {
                 name: "Dashboard",
@@ -73,13 +73,11 @@ export default function ({ props, categories }) {
                 <Row>
                     {additions.notfound.map(c=>{
                         return <Col xs={12} sm={6} md={4} style={{ padding: 8 }}>
-                            <Link href={c.link}>
-                                <ActionCard disabled={c.disabled == true} title={c.name} style={{ height: "100%" }}>
-                                    <p>
-                                        {c.description}
-                                    </p>
-                                </ActionCard>
-                            </Link>
+                            <ActionCard onClick={() => window.location.href = c.link} disabled={c.disabled == true} title={c.name} style={{ height: "100%" }}>
+                                <p>
+                                    {c.description}
+                                </p>
+                            </ActionCard>
                         </Col>
                     })}
                 </Row>
