@@ -1,12 +1,10 @@
-import ActionCard from '../../../components/ActionCard'
+import PageList from '../../../components/_PageList'
 import BackButton from '../../../components/_BackButton'
-import Link from 'next/link'
-import { Grid, Row, Col } from 'react-flexbox-grid/dist/react-flexbox-grid'
 
 // CHANGE INFO HERE
-const id = "welcome" // due to some problems, this MUST be the same as the folder name
-const name = "Welcome!"
-const description = "Welcome to your new helpdesk."
+const id = "roles" // due to some problems, this MUST be the same as the folder name
+const name = "Roles & Role Groups"
+const description = "Role utilies as well as be able to give or remove a set of roles when a user receives a role."
 // CHANGE INFO HERE
 
 export default function ({ props, categories }) {
@@ -18,21 +16,7 @@ export default function ({ props, categories }) {
 
             <BackButton text />
 
-            <Grid fluid>
-                <Row>
-                    {categories.map(c=>{
-                        return <Col xs={12} sm={6} md={4}>
-                            <Link href={`/docs/${id}/${c.fname}`}>
-                                <ActionCard title={c.name}>
-                                    <p>
-                                        {c.description}
-                                    </p>
-                                </ActionCard>
-                            </Link>
-                        </Col>
-                    })}
-                </Row>
-            </Grid>
+            <PageList id={id} items={categories} />
         </div>
     );
 }

@@ -5,7 +5,7 @@ import styles from './index.module.scss'
 class ActionCard extends Component {
     render () {
         return (
-            <div className={styles["action-card"]} onClick={this.props.onClick}>
+            <div className={styles["action-card"]} style={{ height: "100%" }} onClick={this.props.onClick}>
                 <div className={styles["title"]}>
                     {this.props.title}
                 </div>
