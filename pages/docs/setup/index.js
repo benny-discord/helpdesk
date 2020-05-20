@@ -1,5 +1,6 @@
 import PageList from '../../../components/_PageList'
 import BackButton from '../../../components/_BackButton'
+import Head from 'next/head'
 
 // CHANGE INFO HERE
 const id = "setup" // due to some problems, this MUST be the same as the folder name
@@ -10,6 +11,9 @@ const description = "Set up Wizard in your server."
 export default function ({ props, categories }) {
     return (
         <div style={{ textAlign: "center", padding: "4%" }}>
+            <Head>
+                <title>Wizard Help : Setup</title>
+            </Head>
             <h1>{name}</h1>
 
             <p>{description}</p>

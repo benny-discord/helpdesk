@@ -1,5 +1,6 @@
 import PageList from '../../../components/_PageList'
 import BackButton from '../../../components/_BackButton'
+import Head from 'next/head'
 
 // CHANGE INFO HERE
 const id = "linkup" // due to some problems, this MUST be the same as the folder name
@@ -10,6 +11,10 @@ const description = "Create a cross-server connection with your friends."
 export default function ({ props, categories }) {
     return (
         <div style={{ textAlign: "center", padding: "4%" }}>
+            <Head>
+                <title>Wizard Help : Linkup</title>
+            </Head>
+
             <h1>{name}</h1>
 
             <p>{description}</p>

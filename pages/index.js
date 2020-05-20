@@ -1,10 +1,13 @@
 import CategoryList from '../components/_CategoryList'
-import Link from 'next/link'
-import { Grid, Row, Col } from 'react-flexbox-grid/dist/react-flexbox-grid'
+import Head from 'next/head'
 
 export default function ({ props, categories }) {
     return (
         <div style={{ textAlign: "center", padding: "4%" }}>
+            <Head>
+                <title>Wizard Help</title>
+            </Head>
+
             <h1>Wizard Help</h1>
 
             <p>Find all the information you need to use Wizard.</p>
