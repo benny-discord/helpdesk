@@ -1,4 +1,5 @@
 import CategoryList from '../components/_CategoryList'
+import * as ip from 'ip'
 import Head from 'next/head'
 import ActionCard from '../components/ActionCard'
 import Link from 'next/link'
@@ -90,11 +91,15 @@ export default function ({ props, categories }) {
 export async function getStaticProps () {
     let returned = []
 
+    console.log(ip.address())
+
     const fs = require('fs')
     const path = require('path')
     const postsDirectory = path.join(process.cwd(), 'pages', 'docs')
     const filenames = fs.readdirSync(postsDirectory, { withFileTypes: true })
         .filter(d => d.isDirectory())
+
+    
     
     await (async function(){
         for (let i = 0; i < filenames.length; i++) {
