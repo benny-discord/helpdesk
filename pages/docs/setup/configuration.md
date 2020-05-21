@@ -16,6 +16,11 @@ export const info = {
 You can change Wizard's prefix for you server by running `^prefix [new prefix]`.
 
 ## Functional Roles
+
+<Alert style="info">
+    User specific functions may be implemented.
+</Alert>
+
 #### Linkup Roles
 Users in this role have access to the Server Linkup.
 
