@@ -1,0 +1,12 @@
+.hero-box {
+    border-radius: 6px;
+    padding: 50px 20px;
+    background-color: #3db588;
+}
+
+.hero-box-secondary {
+    border-radius: 6px;
+    padding: 20px;
+    margin: 0 16px;
+    background-color: rgba(0, 0, 0, .2);
+}

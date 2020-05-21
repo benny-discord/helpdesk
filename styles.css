@@ -93,7 +93,7 @@ img.emoji {
     height: 1.375em;
 }
 
-a {
+a:not(.prevDefault) {
     color: #3db588;
     opacity: .7;
     text-decoration: none;
@@ -101,7 +101,7 @@ a {
     transition: opacity 150ms;
 }
 
-a:hover {
+a:not(.prevDefault):hover {
     opacity: 1;
     border-bottom: solid 1px #3db588;
 }

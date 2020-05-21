@@ -1,9 +1,8 @@
 import CategoryList from '../components/_CategoryList'
-import * as ip from 'ip'
 import Head from 'next/head'
-import ActionCard from '../components/ActionCard'
-import Link from 'next/link'
-import { Grid, Row, Col } from 'react-flexbox-grid/dist/react-flexbox-grid'
+import { Link, Element } from 'react-scroll'
+import Button from '../components/Button'
+import styles from '../styles.module.css'
 
 export default function ({ props, categories }) {
     const additions = {
@@ -13,55 +12,57 @@ export default function ({ props, categories }) {
         notfound: [
             {
                 name: "Support Server",
-                description: "Report bugs and request additional support here.",
+                color: "brand",
                 link: "https://discord.gg/Sq5feYC"
             },
             {
-                name: "Dashboard",
-                description: "Explorer the dashboard and learn the features yourself.",
-                link: "/",
+                name: "Open Helpdesk Channel",
+                color: "light",
+                link: "",
                 disabled: true
             }
         ]
     }
 
     return (
-        <div style={{ textAlign: "center", padding: "4%" }}>
+        <div style={{ textAlign: "center", padding: "4%" }} >
             <Head>
                 <title>Wizard Help</title>
             </Head>
 
-            <h1>Wizard Help</h1>
-
-            <p>Find all the information you need to use Wizard.</p>
+            <div className={styles["hero-box"]}>
+                <h1 style={{ fontSize: 42 }}>
+                    Wizard <span style={{ fontWeight: 400 }}>Help</span>
+                </h1>
+                <p>
+                    Your top-level special function and utility bot. <br />
+                    Find all the information you need to use Wizard.
+                </p>
+                <div>
+                    <Link to="categories" smooth
+                        offset={50}
+                        duration={500}
+                        className="prevDefault"
+                    >
+                        <Button color="secondary">
+                            Help Categories
+                        </Button>
+                    </Link>
+                    <Button color="light" disabled>
+                        Dashboard
+                    </Button>
+                </div>
+            </div>
 
             {true == false &&
-            <>
-            <h2>
-                New? Learn these basics.
-            </h2>
-
-            <Grid fluid>
-                <Row>
-                    {additions.gettingstarted.map(c=>{
-                        return <Col xs={12} sm={6} md={4} style={{ padding: 8 }}>
-                            <Link href={c.link}>
-                                <ActionCard title={c.name} style={{ height: "100%" }}>
-                                    <p>
-                                        {c.description}
-                                    </p>
-                                </ActionCard>
-                            </Link>
-                        </Col>
-                    })}
-                </Row>
-            </Grid>
-            </>
+            <CategoryList items={additions.gettingstarted} />
             }
 
-            <h2>
-                All Categories
-            </h2>
+            <Element name="categories">
+                <h2>
+                    All Categories
+                </h2>
+            </Element>
 
             <CategoryList items={categories} />
 
@@ -69,19 +70,13 @@ export default function ({ props, categories }) {
                 Can't find what you're looking for?
             </h2>
 
-            <Grid fluid>
-                <Row>
-                    {additions.notfound.map(c=>{
-                        return <Col xs={12} sm={6} md={4} style={{ padding: 8 }}>
-                            <ActionCard onClick={() => window.location.href = c.link} disabled={c.disabled == true} title={c.name} style={{ height: "100%" }}>
-                                <p>
-                                    {c.description}
-                                </p>
-                            </ActionCard>
-                        </Col>
-                    })}
-                </Row>
-            </Grid>
+            <div>
+                {additions.notfound.map(c=> (
+                    <Button disabled={c.disabled === true} onClick={() => window.location.href = c.link} color={c.color}>
+                        {c.name}
+                    </Button>
+                ))}
+            </div>
         </div>
     );
 }
