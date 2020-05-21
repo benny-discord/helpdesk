@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Link, Element } from 'react-scroll'
 import Button from '../components/Button'
 import styles from '../styles.module.css'
+import ReactTooltip from "react-tooltip"
 
 export default function ({ props, categories }) {
     const additions = {
@@ -18,8 +19,7 @@ export default function ({ props, categories }) {
             {
                 name: "Open Helpdesk Channel",
                 color: "light",
-                link: "",
-                disabled: true
+                link: "/docs/setup/helpdesk"
             }
         ]
     }
@@ -76,6 +76,12 @@ export default function ({ props, categories }) {
                         {c.name}
                     </Button>
                 ))}
+
+                <p data-tip="These two options have different purposes. If you have a quick bug report, or need quick help, you can use the helpdesk channel to not have to join the support server. If you think your problem will take a bit, then join our support server." className={styles["muted-a"]} style={{ marginTop: 10 }}>
+                    What do I choose?
+                </p>
+
+                <ReactTooltip className={styles["tooltip"]} arrowColor="#3db588" fontSize="16" effect="solid" />
             </div>
         </div>
     );

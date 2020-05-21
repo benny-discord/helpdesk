@@ -10,3 +10,24 @@
     margin: 0 16px;
     background-color: rgba(0, 0, 0, .2);
 }
+
+.muted-a {
+    cursor: pointer;
+    color: #ffffff;
+    opacity: .6;
+    transition: opacity 150ms;
+}
+
+p.muted-a {
+    cursor: help;
+}
+
+.muted-a:hover {
+    opacity: .8;
+}
+
+.tooltip {
+    background-color: #3db588 !important; 
+    opacity: 1 !important;
+    max-width: 90%;
+}

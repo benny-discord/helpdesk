@@ -5,6 +5,10 @@ export const info = {
 
 <PageToolBar title="Wizard's Goal" />
 
+<Alert style="warn">
+    This page is a work in progress. Details may be missing.
+</Alert>
+
 ## Table of Contents
 
 # Wizard: About It
