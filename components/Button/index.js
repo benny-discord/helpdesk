@@ -6,14 +6,21 @@ import styles from './index.module.scss'
 
 class Button extends Component {
     render() {
+        const {
+            children,
+            color,
+            disabled,
+            ...other
+        } = this.props
+
         const ButtonClasses = classNames({
             [styles["button"]]: true,
-            [styles[this.props.color]]: true
+            [styles[color]]: true
         })
 
         return (
-            <button className={ButtonClasses} disabled={this.props.disabled} onClick={this.props.onClick}>
-                {this.props.children}
+            <button className={ButtonClasses} disabled={disabled} {...other}>
+                {children}
             </button>
         )
     }
@@ -33,7 +40,8 @@ Button.propTypes = {
         "light"
     ]),
     disabled: PropTypes.bool,
-    onClick: PropTypes.func
+    onClick: PropTypes.func,
+    href: PropTypes.string
 }
 
 export default Button

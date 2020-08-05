@@ -1,5 +1,5 @@
-$color-brand: #3db588;
-$color-secondary: #ac5ee0;
+$color-brand: #40c9dd;
+$color-secondary: #333;
 $color-destructive: #f04747;
 $color-light: #ffffff;
 
@@ -9,17 +9,17 @@ $text-on-destructive: #ffffff;
 $text-on-light: #464c4f;
 
 .button {
-    cursor: pointer;
+	cursor: pointer;
 	box-sizing: border-box;
-	background-position: 0 100%;
-	background-size: 200% 200%;
 	outline: 0;
 	display: inline-flex;
+	justify-content: center;
+	align-items: center;
 	padding: 0.6rem 1.2rem;
 	min-height: 42px;
+	min-width: 86px;
 	border-radius: 4px;
 	border: solid 1px;
-	font-weight: bold;
 	font-size: 16px;
 	margin: 10px;
 	transition: all 120ms;
@@ -30,69 +30,41 @@ $text-on-light: #464c4f;
 
 	&.brand {
 		background-color: $color-brand;
-		background-image: linear-gradient(
-			-180deg,
-			darken($color-brand, 4%) 0%,
-			$color-brand 50%,
-			darken($color-brand, 4%) 100%
-		);
-		box-shadow: inset 0 -1px 0 0 darken($color-brand, 8%);
 		border-color: darken($color-brand, 8%);
 		color: $text-on-brand;
 
 		&:active {
-			box-shadow: inset 0 2px 0px darken($color-brand, 15%);
+			box-shadow: inset 0 1px 3px darken($color-brand, 15%);
 		}
 	}
 
 	&.secondary {
 		background-color: $color-secondary;
-		background-image: linear-gradient(
-			-180deg,
-			darken($color-secondary, 4%) 0%,
-			$color-secondary 50%,
-			darken($color-secondary, 4%) 100%
-		);
-		box-shadow: inset 0 -1px 0 0 darken($color-secondary, 8%);
 		border-color: darken($color-secondary, 8%);
 		color: $text-on-secondary;
 
 		&:active {
-			box-shadow: inset 0 2px 0px darken($color-secondary, 15%);
+			box-shadow: inset 0 1px 3px darken($color-secondary, 15%);
 		}
 	}
 
 	&.destructive {
 		background-color: $color-destructive;
-		background-image: linear-gradient(
-			-180deg,
-			darken($color-destructive, 4%) 0%,
-			$color-destructive 50%,
-			darken($color-destructive, 4%) 100%
-		);
-		box-shadow: inset 0 -1px 0 0 darken($color-destructive, 8%);
 		border-color: darken($color-destructive, 8%);
 		color: $text-on-destructive;
 
 		&:active {
-			box-shadow: inset 0 2px 0px darken($color-destructive, 15%);
+			box-shadow: inset 0 1px 3px darken($color-destructive, 15%);
 		}
 	}
 
 	&.light {
 		background-color: $color-light;
-		background-image: linear-gradient(
-			-180deg,
-			darken($color-light, 4%) 0%,
-			$color-light 50%,
-			darken($color-light, 4%) 100%
-		);
-		box-shadow: inset 0 -1px 0 0 darken($color-light, 8%);
 		border-color: darken($color-light, 8%);
 		color: $text-on-light;
 
 		&:active {
-			box-shadow: inset 0 2px 0px darken($color-light, 15%);
+			box-shadow: inset 0 1px 3px darken($color-light, 15%);
 		}
 	}
 

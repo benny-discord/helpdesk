@@ -11,11 +11,11 @@ class MyDocument extends Document {
             <Html>
                 <Head>
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-                    <meta name="theme-color" content="#3db588" />
-                    <meta name="og:title" content="Wizard Documentation"/>
+                    <meta name="theme-color" content="#40c9dd" />
+                    <meta name="og:title" content="Benny Documentation"/>
                     <meta name="og:image" content="https://cdn.discordapp.com/avatars/694822276356374548/39a8d84247034d30c347911e830b569c.png?size=1024" />
-                    <meta name="og:site_name" content="Wizard" />
-                    <meta name="og:description" content="Documention to get help with Wizard, a bot on Discord." />
+                    <meta name="og:site_name" content="Benny" />
+                    <meta name="og:description" content="Documention to get help with Benny, a bot on Discord." />
                 </Head>
                 
                 <body>

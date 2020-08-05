@@ -1,7 +1,7 @@
 .hero-box {
     border-radius: 6px;
     padding: 50px 20px;
-    background-color: #3db588;
+    background-color: #40c9dd;
 }
 
 .hero-box-secondary {
@@ -27,7 +27,7 @@ p.muted-a {
 }
 
 .tooltip {
-    background-color: #3db588 !important; 
+    background-color: #40c9dd !important; 
     opacity: 1 !important;
     max-width: 90%;
 }

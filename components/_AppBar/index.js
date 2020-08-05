@@ -9,7 +9,7 @@ class AppBar extends Component {
             <div className={styles["appbar"]}>
                 <Link href="/">
                     <span className={styles["title"]}>
-                        Wizard
+                        Benny
 
                         <span className={styles["title-alt"]}>
                             Help

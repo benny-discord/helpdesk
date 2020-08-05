@@ -92,10 +92,12 @@ blockquote::before {
 img.emoji {
     width: 1.375em;
     height: 1.375em;
+    margin: 0;
+    box-shadow: none !important;
 }
 
 a:not(.prevDefault) {
-    color: #3db588;
+    color: #40c9dd;
     opacity: .7;
     text-decoration: none;
     border-bottom: dotted 1px #93d6bd;
@@ -104,7 +106,7 @@ a:not(.prevDefault) {
 
 a:not(.prevDefault):hover {
     opacity: 1;
-    border-bottom: solid 1px #3db588;
+    border-bottom: solid 1px #40c9dd;
 }
 
 th, td {

@@ -3,18 +3,17 @@ import BackButton from '../../../components/_BackButton'
 import Head from 'next/head'
 
 // CHANGE INFO HERE
-const id = "roles" // due to some problems, this MUST be the same as the folder name
-const name = "Roles & Role Groups"
-const description = "Role utilies as well as be able to give or remove a set of roles when a user receives a role."
+const id = "example" // due to some problems, this MUST be the same as the folder name
+const name = "Example Module"
+const description = "Learn how to write the documentation."
 // CHANGE INFO HERE
 
 export default function ({ props, categories }) {
     return (
         <div style={{ textAlign: "center", padding: "4%" }}>
             <Head>
-                <title>Wizard Help : Roles</title>
+                <title>Benny Help : {name}</title>
             </Head>
-
             <h1>{name}</h1>
 
             <p>{description}</p>
