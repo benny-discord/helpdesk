@@ -1,5 +1,5 @@
 export const info = {
-    name: "playing the music quiz",
+    name: "Playing the Music Quiz",
     description: "Going over permissions and how to play the Music Quiz"
 }
 
