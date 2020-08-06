@@ -8,6 +8,4 @@ export const info = {
 Benny's tags are designed to help your server with pre-typed messages. You can use Benny's tags to quickly share information, without using the time to type it again.
 
 # Features
-Benny's tags module offers amazing features to help you even more! 
-
-We have a [dashboard](https://bennybot.dev/dashboard) where you can customize your tags to your needs. 
+Benny's tags module offers amazing features to help you even more. You can customize these options in your server's [dashboard](https://bennybot.dev/dashboard). You can view articles of these features [here.](https://help.bennybot.dev/docs/tags)
