@@ -5,7 +5,10 @@ export const info = {
 
 <PageToolBar title="Music Quiz" />
 
-# Different type of generes we currently offer
+# This is the current list of genres available
+There will be between 100 and 250 songs in each genre.
+
+We aim to add more genres soon.
 - pop
 
 

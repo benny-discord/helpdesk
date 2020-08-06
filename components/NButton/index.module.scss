@@ -76,4 +76,10 @@ $text-on-light: #464c4f;
 		cursor: not-allowed;
 		box-shadow: none !important;
 	}
+
+	@media screen and (max-width: 575px){
+		&.hideable {
+			display: none;
+		}
+	}
 }

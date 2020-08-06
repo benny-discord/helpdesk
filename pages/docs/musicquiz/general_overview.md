@@ -8,8 +8,10 @@ export const info = {
 # What is Music Quiz?
 Music Quiz is a fun module for your users to interact and have fun with one another. It can be fast paced and challenging but that is what makes it fun.
 
-<Alert style="info">Note: You can earn up to 43 points in total by guessing the Song Title and author</Alert>
-<Alert style="destructive">Note: This Module gets really spammy so it is advised to have a different channel for this plugin!</Alert>
+<Alert style="info">Note: You can earn up to 45 points in total by guessing the Song Title and Author</Alert>
+<Alert style="destructive">Note: A lot of messages are sent when playing the game so it is advised to have a different channel for this plugin!</Alert>
+
+![](/docs/musicquiz/intro.png)
 
 
 

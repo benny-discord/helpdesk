@@ -18,6 +18,7 @@ export const info = {
 
 
 #### Playing and stopping the Music Quiz
-``Benny start-quiz`` will start the Music Quiz 
+``Benny start-quiz`` will start the Music Quiz
+
 ``Benny stop-quiz`` will stop the Music Quiz
 <Alert style="destructive">Note: This Module gets really spammy so it is advised to have a different channel for this plugin!</Alert>

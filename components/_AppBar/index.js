@@ -20,8 +20,11 @@ class AppBar extends Component {
                 <div className={styles["spacer"]}></div>
 
                 <Button color="light" onClick={() => window.location.href = 'https://bennybot.dev/dashboard'}>
-                    Dashboard
-                    </Button>
+					Dashboard
+                </Button>
+				<Button color="destructive" hideable={true} onClick={() => window.open('https://github.com/BennyDiscord/benny-helpdesk', undefined, "noreferrer")}>
+					Contribute
+                </Button>
             </div>
         )
     }
