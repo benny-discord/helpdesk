@@ -12,4 +12,10 @@ Here's an example:
 # Features
 Benny's tags module offers amazing features to help you even more. You can customize these options in your server's [dashboard](https://bennybot.dev/dashboard). You can view articles of these features [here.](https://help.bennybot.dev/docs/tags)
 # Permissions
-Benny requires a list of permissions 
+For the Tags module to function correctly, it requires a list of permissions.
+<Alert style="info">These options can be found like so: Server Settings > Roles > Benny</Alert>
+Benny requires these permissions:
+* View Message History
+* View Messages
+- Send Messages
+- Embed Links
