@@ -6587,7 +6587,7 @@ var info = {
 
 /***/ }),
 
-/***/ 2:
+/***/ 1:
 /*!****************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fdocs%2Fmusicquiz&absolutePagePath=F%3A%5CProjects%5Cbenny-things%5Chelpdesk%5Cpages%5Cdocs%5Cmusicquiz%5Cindex.js ***!
   \****************************************************************************************************************************************************************/
@@ -6610,5 +6610,5 @@ module.exports = dll_2adc2403d89adc16ead0;
 
 /***/ })
 
-},[[2,"static/runtime/webpack.js"]]]);
+},[[1,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=musicquiz.js.map
