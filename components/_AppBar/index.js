@@ -19,9 +19,9 @@ class AppBar extends Component {
 
                 <div className={styles["spacer"]}></div>
 
-                <Button disabled>
+                <Button color="light" onClick={() => window.location.href = 'https://bennybot.dev/dashboard'}>
                     Dashboard
-                </Button>
+                    </Button>
             </div>
         )
     }

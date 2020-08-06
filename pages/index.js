@@ -3,18 +3,17 @@ import Head from 'next/head'
 import { Link, Element } from 'react-scroll'
 import Button from '../components/Button'
 import styles from '../styles.module.css'
-import ReactTooltip from "react-tooltip"
 
 export default function ({ props, categories }) {
     const additions = {
         gettingstarted: [
-            
+
         ],
         notfound: [
             {
                 name: "Support Server",
                 color: "brand",
-                link: "https://discord.gg/Sq5feYC"
+                link: "https://discord.gg/RDeNrrY"
             }
         ]
     }
@@ -43,14 +42,14 @@ export default function ({ props, categories }) {
                             Help Categories
                         </Button>
                     </Link>
-                    <Button color="light" disabled>
+                    <Button color="light" onClick={() => window.location.href = 'https://bennybot.dev/dashboard'}>
                         Dashboard
                     </Button>
                 </div>
             </div>
 
             {additions.gettingstarted.length != 0 &&
-            <CategoryList items={additions.gettingstarted} />
+                <CategoryList items={additions.gettingstarted} />
             }
 
             <Element name="categories">
@@ -66,7 +65,7 @@ export default function ({ props, categories }) {
             </h2>
 
             <div>
-                {additions.notfound.map(c=> (
+                {additions.notfound.map(c => (
                     <Button disabled={c.disabled === true} onClick={() => window.location.href = c.link} color={c.color}>
                         {c.name}
                     </Button>
@@ -76,7 +75,7 @@ export default function ({ props, categories }) {
     );
 }
 
-export async function getStaticProps () {
+export async function getStaticProps() {
     let returned = []
 
     const fs = require('fs')
@@ -85,12 +84,12 @@ export async function getStaticProps () {
     const filenames = fs.readdirSync(postsDirectory, { withFileTypes: true })
         .filter(d => d.isDirectory())
 
-    
-    
-    await (async function(){
+
+
+    await (async function () {
         for (let i = 0; i < filenames.length; i++) {
             let ux = filenames[i]
-    
+
             import(`./docs/${ux.name}/index.js`)
                 .then(x => {
                     returned.push({
@@ -101,7 +100,7 @@ export async function getStaticProps () {
                 })
         }
     })()
-        
+
     return {
         props: {
             categories: returned
