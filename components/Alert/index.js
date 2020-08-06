@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
-import PropValidator from '../../utils/Validator'
 import styles from './index.module.scss'
 
 class Alert extends Component {
@@ -30,12 +29,7 @@ Alert.defaultProps = {
 }
 
 Alert.propTypes = {
-    style: PropValidator([
-        "info",
-        "warn",
-        "destructive",
-        "success"
-    ])
+    style: PropTypes.oneOf(['info', 'warn', 'destructive', 'success'])
 }
 
 export default Alert

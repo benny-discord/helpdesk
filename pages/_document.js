@@ -13,10 +13,10 @@ class MyDocument extends Document {
                     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
                     <meta name="theme-color" content="#40c9dd" />
                     <meta name="og:title" content="Benny Documentation"/>
-                    <meta name="og:image" content="https://bennybot.dev/icon.png" />
+                    <meta name="og:image" content="/icon.png" />
                     <meta name="og:site_name" content="Benny" />
                     <meta name="og:description" content="Documention to get help with Benny, a bot on Discord." />
-                    <link rel="icon" href="https://bennybot.dev/icon.png" />
+                    <link rel="icon" href="/icon.png" />
                 </Head>
                 
                 <body>

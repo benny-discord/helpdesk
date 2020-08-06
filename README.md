@@ -1,4 +1,5 @@
 # How to write Benny Documentation
+Thanks to [Davien](https://github.com/RealSGII2) for designing our helpdesk.
 
 ## Writing a module
 To create your first module, copy and paste the **example-pages** folder into a new folder within the **docs** folder. The name of the folder is what the name of the module will be. You can name it anything URL compatible. This is what will be displayed in the URL. Then, open the index.js file inside of it. 

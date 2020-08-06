@@ -65,8 +65,8 @@ export default function ({ props, categories }) {
             </h2>
 
             <div>
-                {additions.notfound.map(c => (
-                    <Button disabled={c.disabled === true} onClick={() => window.location.href = c.link} color={c.color}>
+                {additions.notfound.map((c, i) => (
+                    <Button disabled={c.disabled === true} onClick={() => window.location.href = c.link} color={c.color} key={i}>
                         {c.name}
                     </Button>
                 ))}
