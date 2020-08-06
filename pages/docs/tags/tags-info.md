@@ -5,5 +5,5 @@ export const info = {
 
 <PageToolBar title="Benny's tags" />
 
-# What can tags be used for?
-You can use Benny's tags to quickly share information, without using the time to type it again.
+Benny's tags are designed to help your server with pre-typed messages. You can use Benny's tags to quickly share information, without using the time to type it again.
+
