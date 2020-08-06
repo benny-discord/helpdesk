@@ -17,5 +17,5 @@ For the Tags module to function correctly, it requires a list of permissions.
 Benny requires these permissions:
 * View Message History
 * View Messages
-- Send Messages
-- Embed Links
+* Send Messages
+* Embed Links
