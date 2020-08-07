@@ -1,3 +1,7 @@
+
+
+<PageToolbar title="Tags" />
+
 Benny has multiple variables you can use in your tags. There are two types of variables.
 # Server Variables
 Server Variables describe server information.
