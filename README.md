@@ -44,7 +44,7 @@ That's what allows the `export const info` to work. Another plus is that you can
 
 Next, copy and paste this into your file: 
 ```jsx
-<PageToolbar title="" />
+<PageToolBar title="" />
 ```
 Give the title a string value of your choice. This is what will be displayed as the header.
 

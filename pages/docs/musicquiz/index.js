@@ -12,7 +12,7 @@ export default function ({ props, categories }) {
     return (
         <div style={{ textAlign: "center", padding: "4%" }}>
             <Head>
-                <title>Benny Help : {name}</title>
+                <title>Benny Help: {name}</title>
             </Head>
             <h1>{name}</h1>
 

@@ -3,7 +3,7 @@ export const info = {
     description: "A guide on using cool variables in your Tags!"
 }
 
-<PageToolbar title="Tags" />
+<PageToolBar title="Tag Variables" />
 
 Benny has multiple variables you can use in your tags. There are two types of variables.
 # Server Variables
@@ -33,7 +33,8 @@ Server ID: {server.id}
 **Server Owner:** {server.owner}
 **Server Region:** {server.region}
 ```
-points to: ![ServerVariables](/tags/server_variables.PNG)
+
+points to: ![ServerVariables](/docs/tags/server_variables.PNG)
 
 **User Variables**
 ```
@@ -42,4 +43,4 @@ Your **discriminator** is {user.tag} and your **Username** is {user.name}.
 You also have a cool avatar: {user.avatar}
 Have a nice day! <:BennyLove:732658898216943737>
 ```
-points to: ![UserVariables](/tags/user_variables.jpg)
+points to: ![UserVariables](/docs/tags/user_variables.jpg)

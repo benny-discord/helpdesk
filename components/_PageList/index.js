@@ -8,13 +8,13 @@ class PageList extends Component {
         return (
             <Grid fluid>
                 <Row>
-                    {this.props.items.map(c=>{
-                        return <Col xs={12} sm={6} md={4} style={{ padding: 8 }}>
+                    {this.props.items.map((c, i)=>{
+                        return <Col xs={12} sm={6} md={4} style={{ padding: 8 }} key={i}>
                             <Link href={`/docs/${this.props.id}/${c.fname}`}>
                                 <ActionCard title={c.name} style={{ height: "100%" }}>
-                                    <p>
+                                    <span>
                                         {c.description}
-                                    </p>
+                                    </span>
                                 </ActionCard>
                             </Link>
                         </Col>

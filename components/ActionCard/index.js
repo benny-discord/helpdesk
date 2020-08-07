@@ -16,9 +16,9 @@ class ActionCard extends Component {
                     {this.props.title}
                 </div>
 
-                <p className={styles["description"]}>
+                <div className={styles["description"]}>
                     {this.props.children}
-                </p>
+                </div>
             </div>
         )
     }
