@@ -34,4 +34,4 @@ Your **discriminator** is {user.tag} and your **Username** is {user.name}.
 You also have a cool avatar: {user.avatar}
 Have a nice day! <:BennyLove:732658898216943737>
 ```
-points to:
+points to: ![UserVariables](/tags/user_variables.jpg)
