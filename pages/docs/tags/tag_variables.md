@@ -1,4 +1,7 @@
-
+export const info = {
+    name: "Tag Variables",
+    description: "A guide on using cool variables in your Tags!"
+}
 
 <PageToolbar title="Tags" />
 
