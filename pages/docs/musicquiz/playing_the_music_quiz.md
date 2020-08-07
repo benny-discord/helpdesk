@@ -6,7 +6,7 @@ export const info = {
 <PageToolBar title="Music Quiz" />
 
 # Permissions Required in order to work
-<Alert style="warn">Setting up permissions: Server Settings > Roles > Benny</Alert>
+<Alert style="info">Setting up permissions: Server Settings > Roles > Benny</Alert>
 
 #### Next is giving Benny the right permissions in order for benny to play the Music Quiz
 - Read Text Channels & See Voice Channels
