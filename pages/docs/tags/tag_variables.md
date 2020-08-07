@@ -18,10 +18,10 @@ User Variables describe information of the user who ran the tag command.
 # Examples
 **Server Variables**
 
-`<:BennySip:731922765246103562> Some information of this server:
+```<:BennySip:731922765246103562> Some information of this server:
 **Server Name:** {server}
 Server ID: {server.id}
 **Server Icon:** {server.icon}
 **Server Owner:** {server.owner}
-**Server Region:** {server.region}`
+**Server Region:** {server.region}```
 points to: 
