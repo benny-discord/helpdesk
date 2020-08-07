@@ -33,7 +33,7 @@ Server ID: {server.id}
 **Server Owner:** {server.owner}
 **Server Region:** {server.region}
 ```
-points to: (insert image)
+points to: ![UserVariables](/tags/server_variables.PNG)
 
 **User Variables**
 ```
