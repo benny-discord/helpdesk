@@ -24,4 +24,9 @@ Server ID: {server.id}
 **Server Icon:** {server.icon}
 **Server Owner:** {server.owner}
 **Server Region:** {server.region}```
+
 points to: 
+
+**User Variables**
+
+
