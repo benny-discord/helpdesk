@@ -17,7 +17,6 @@ User Variables describe information of the user who ran the tag command.
 
 # Examples
 **Server Variables**
-
 ```
 <:BennySip:731922765246103562> Some information of this server:
 **Server Name:** {server}
@@ -26,8 +25,13 @@ Server ID: {server.id}
 **Server Owner:** {server.owner}
 **Server Region:** {server.region}
 ```
-points to: 
+points to: (insert image)
 
 **User Variables**
-
-
+```
+Hey, {user}! Did you know, that your **User ID** is {user.id}? Isn’t that cool? I also know this information about you <:BennyWizard:734809658325205124>:
+Your **discriminator** is {user.tag} and your **Username** is {user.name}.
+You also have a cool avatar: {user.avatar}
+Have a nice day! <:BennyLove:732658898216943737>
+```
+points to:
