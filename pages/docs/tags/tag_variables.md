@@ -21,6 +21,7 @@ User Variables describe information of the user who ran the tag command.
 * Username: `{user.name}`
 * User ID: `{user.id}`
 
+<Alert style="info">Note: You can configure your tags by going to your [dashboard](https://bennybot.dev/dashboard) > Tags</Alert>
 
 # Examples
 **Server Variables**
