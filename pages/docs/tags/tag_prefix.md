@@ -6,5 +6,4 @@ export const info = {
 
 We want to make Benny as helpful and useful as possible.
 A tag prefix can fasten the time of posting your tag. For example, instead of sending `!tag ExampleTag` you can use `?ExampleTag`, just like seen here: ![TagPrefix](/tags/tag_prefix.jpg)
-
-You can setup your tag prefix on your [dashboard](https://bennybot.dev/dashboard).
+<Alert style="info">Note: You can setup your tag prefix on your [dashboard](https://bennybot.dev/dashboard).</Alert>
