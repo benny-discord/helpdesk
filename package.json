@@ -21,7 +21,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-flexbox-grid": "^2.1.2",
-    "react-scroll": "^1.8.0",
+    "react-scroll": "^1.8.1",
     "react-tooltip": "^4.2.8",
     "remark-emoji": "^2.1.0",
     "remark-kbd": "^1.0.21",
