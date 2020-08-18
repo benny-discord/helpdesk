@@ -86,8 +86,64 @@ I've included a few components into the system. There is no need to import them-
 > **onClick**: func
 >
 > The method to run on click. This can be used like so to create links.
-```react
+```JSX
 <Button onClick={()=>window.location.href = 'https://your.link/goes/here'}>Text</Button>
+```
+
+### Discord Messages:
+Container for Discord Message components (See below)
+
+```JSX
+<DiscordMessages>
+
+</DiscordMessages>
+```
+
+### Discord Message
+> **author**: string
+> 
+> This is the author's username
+>
+> Example: `username="Username!"`
+
+> **avatar**: string
+>
+> Link to the user's avatar
+>
+> Example: `avatar="https://avatar.com"`
+
+> **bot**: boolean
+>
+> Whether to give the bot tag or not
+>
+> Example: `bot={true}` `bot={false}`
+
+> **edited**: boolean
+>
+> Whether to give the edited tag or not
+>
+> Example: `edited={true}` `edited={false}`
+
+> **role-color**: string
+>
+> Colour of the user to display
+>
+> Example: `role-color="#ABCDEF"`
+
+```JSX
+<DiscordMessages>
+<DiscordMessage
+author="Username"
+avatar="https://avatar.com"
+bot={true}
+edited={true}
+role-color="#FF0000"
+>
+
+This is my message content. It supports **markdown**.
+
+</DiscordMessage>
+</DiscordMessages>
 ```
 
 ### PageToolbar

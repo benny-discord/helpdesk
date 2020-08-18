@@ -19,6 +19,7 @@
     "next": "9.5.2",
     "prop-types": "^15.7.2",
     "react": "16.13.1",
+    "react-discord-message": "git+https://github.com/Danktuary/react-discord-message.git",
     "react-dom": "16.13.1",
     "react-flexbox-grid": "^2.1.2",
     "react-scroll": "^1.8.1",

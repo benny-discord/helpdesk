@@ -5,6 +5,8 @@ export const info = {
 
 <PageToolBar title="Tag Variables" />
 
+# Table of Contents
+
 Benny has multiple variables you can use in your tags. There are two types of variables.
 # Server Variables
 Server Variables describe server information.
@@ -24,23 +26,58 @@ User Variables describe information of the user who ran the tag command.
 <Alert style="info">Note: You can configure your tags by going to your dashboard and choosing the tags module.</Alert>
 
 # Examples
-**Server Variables**
+
+## Server Variables
+
 ```
-<:BennySip:731922765246103562> Some information of this server:
+**Some information about this server:**
 **Server Name:** {server}
-Server ID: {server.id}
+**Server ID**: {server.id}
 **Server Icon:** {server.icon}
 **Server Owner:** {server.owner}
 **Server Region:** {server.region}
 ```
 
-points to: ![ServerVariables](/docs/tags/server_variables.PNG)
+<DiscordMessages>
+<DiscordMessage
+    author="Benny"
+    bot={true}
+    avatar="https://bennybot.dev/icon.png"
+    key={2}
+>
 
-**User Variables**
+**Some information about this server:**<br />
+**Server Name:** Benny Support<br />
+**Server ID**: 523525264517496834<br />
+**Server Icon:** https://cdn.discordapp.com/icons/523525264517496834/1190e1523f5cb03c8bfa309c23753189.png?size=2048<br />
+**Server Owner:** AR#3616<br />
+**Server Region:** europe
+
+</DiscordMessage>
+</DiscordMessages>
+
+## User Variables
 ```
-Hey, {user}! Did you know, that your **User ID** is {user.id}? Isn’t that cool? I also know this information about you <:BennyWizard:734809658325205124>:
+Hey, {user}! Did you know, that your **User ID** is {user.id}?
+Isn’t that cool? I also know this information about you:
 Your **discriminator** is {user.tag} and your **Username** is {user.name}.
 You also have a cool avatar: {user.avatar}
-Have a nice day! <:BennyLove:732658898216943737>
+Have a nice day!
 ```
-points to: ![UserVariables](/docs/tags/user_variables.jpg)
+
+<DiscordMessages>
+<DiscordMessage
+    author="Benny"
+    bot={true}
+    avatar="https://bennybot.dev/icon.png"
+    key={2}
+>
+
+Hey, <Mention>Discord User</Mention>! Did you know, that your **User ID** is 123456789012345678?<br />
+Isn’t that cool? I also know this information about you:<br />
+Your **discriminator** is Discord User#0000 and your **Username** is Discord User.<br />
+You also have a cool avatar: https://cdn.discordapp.com/embed/avatars/0.png
+Have a nice day!
+
+</DiscordMessage>
+</DiscordMessages>

@@ -137,3 +137,7 @@ img {
     border-radius: 4px;
     margin: 10px auto;
 }
+
+.discord-message {
+    overflow: auto;
+}

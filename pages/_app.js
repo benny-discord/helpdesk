@@ -6,7 +6,11 @@ import { MDXProvider } from '@mdx-js/react'
 import '../styles.css'
 import 'react-flexbox-grid/dist/react-flexbox-grid.css'
 
-// h
+// import dynamic from 'next/dynamic'
+
+// const DiscordMessage = dynamic( () => import('react-discord-message').then(r=>({DiscordMessage: r.DiscordMessage, DiscordMessages: r.DiscordMessages, Mention: r.Mention})), { ssr: false } )
+// console.log(DiscordMessage)
+import {DiscordMessages,DiscordEmbed,DiscordMessage,Mention,EmbedField} from 'react-discord-message'
 
 const components = {
     wrapper: props => (
@@ -31,10 +35,14 @@ const components = {
         <blockquote>
             {props.children}
         </blockquote>
-    )
+    ),
+    DiscordMessages: DiscordMessages,
+    DiscordMessage: DiscordMessage,
+    DiscordEmbed: DiscordEmbed,
+    Mention: Mention
 }
 
-export default function ({ Component, pageProps }) {
+export default function Load({ Component, pageProps }) {
     return (
         <>
             <AppBar />

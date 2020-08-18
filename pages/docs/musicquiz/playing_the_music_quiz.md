@@ -25,7 +25,20 @@ export const info = {
 
 Once you start the quiz, this message will be sent.
 
-![](/docs/musicquiz/intro.png)
+<DiscordMessages>
+<DiscordMessage
+    author="Benny"
+    bot={true}
+    avatar="https://bennybot.dev/icon.png"
+    key={1}
+>
+
+<DiscordEmbed slot="embeds" color="#1abc9c" title="Welcome to the Music Quiz" fields={[]}>
+This is a fun game where I will play you a list of songs, and you have to guess what they are.<br />You will get 1 point if you guess the author of the song, 1 point if you guess the title, and 3 points if you guess both!<br />To guess, just write a message in this channel.
+</DiscordEmbed>
+
+</DiscordMessage>
+</DiscordMessages>
 
 After 5 seconds, the first song will start playing. Send messages in that channel to guess the title and author. 
 
@@ -37,8 +50,46 @@ If you get a guess wrong, Benny will react with a cross, like so:
 
 If you get it right, a message like the following will be displayed:
 
-![](/docs/musicquiz/right_guess.png)
+<DiscordMessages>
+<DiscordMessage
+    author="Discord User"
+    key={2}
+>
+
+Years & Years
+
+</DiscordMessage>
+<DiscordMessage
+    author="Benny"
+    bot={true}
+    avatar="https://bennybot.dev/icon.png"
+    key={3}
+>
+
+**Discord User#0000** guessed the song title correctly! The song was "**Years & Years**"!
+
+</DiscordMessage>
+</DiscordMessages>
 
 You are also able to guess the title and author in one message, like so:
 
-![](/docs/musicquiz/two_in_one.png)
+<DiscordMessages>
+<DiscordMessage
+    author="Discord User"
+    key={2}
+>
+
+Years & Years Breathe
+
+</DiscordMessage>
+<DiscordMessage
+    author="Benny"
+    bot={true}
+    avatar="https://bennybot.dev/icon.png"
+    key={3}
+>
+
+**Discord User#0000** guessed the song title and author correctly! The song was "**Breathe**" by "**Years & Years**"!
+
+</DiscordMessage>
+</DiscordMessages>
