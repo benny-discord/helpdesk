@@ -146,6 +146,43 @@ This is my message content. It supports **markdown**.
 </DiscordMessages>
 ```
 
+### Discord Mentions
+Inside your `<DiscordMessage>` components, you can have `<Mention>` components.
+> **type**: string
+>
+> Values: 'channel', 'role', 'user'
+>
+> Example: 
+>
+> `<Mention type="channel">channel-1</Mention>`
+>
+> `<Mention type="user">Username</Mention>`
+
+### Discord Embeds
+| Prop | Type | Optional | Default Value | Description |
+| --- | --- | --- | --- | --- |
+| color | String | ✅ | | The color to use for the embed's left border. Can be any [CSS color value](https://www.w3schools.com/cssref/css_colors_legal.asp). |
+| author-name | String | ✅ | | The author's name. |
+| author-image | String | ✅ | | The author's avatar URL. |
+| author-url | String | ✅ | | The URL to open when you click on the author's name. |
+| title | String | ✅ | | The embed title. |
+| url | String | ✅ | | The URL to open when you click on the embed title. |
+| thumbnail | String | ✅ | | The thumbnail image to use. |
+| image | String | ✅ | | The embed image to use (displayed at the bottom). |
+| footer-image | String | ✅ | | The image to use next to the footer text. |
+| timestamp | Date\|String | ✅ | | The timestamp to use for the footer text. When supplying a string, the format must be `01/31/2000`. |
+
+To set a description, place it inside the `<DiscordEmbed>` component, like so:
+```html
+<DiscordEmbed color="#0099ff" slot="embeds" fields={[]}>
+	Hi, I'm the embed description.
+</DiscordEmbed>
+```
+This must go inside a `<DiscordMessage>` component.
+
+**Notes**:
+- You MUST add `slot="embeds"` and `fields={[]}` to your component, otherwise it will cause issues.
+
 ### PageToolbar
 > **title**: string
 >
