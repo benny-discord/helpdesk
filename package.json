@@ -10,7 +10,7 @@
     "deploy": "next build && next export && git add * && git commit -m \"Deploy gh-pages\" && git push origin master && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
-    "@mdx-js/loader": "^1.6.16",
+    "@mdx-js/loader": "^1.6.17",
     "@next/mdx": "^9.5.3",
     "add": "^2.0.6",
     "classnames": "^2.2.6",
