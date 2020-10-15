@@ -18,7 +18,7 @@
     "ip": "^1.1.5",
     "next": "9.5.3",
     "prop-types": "^15.7.2",
-    "react": "16.13.1",
+    "react": "16.14.0",
     "react-discord-message": "git+https://github.com/Danktuary/react-discord-message.git",
     "react-dom": "16.13.1",
     "react-flexbox-grid": "^2.1.2",
