@@ -16,7 +16,7 @@
     "classnames": "^2.2.6",
     "fs": "^0.0.1-security",
     "ip": "^1.1.5",
-    "next": "10.0.2",
+    "next": "10.0.3",
     "prop-types": "^15.7.2",
     "react": "17.0.1",
     "react-discord-message": "git+https://github.com/Danktuary/react-discord-message.git",
