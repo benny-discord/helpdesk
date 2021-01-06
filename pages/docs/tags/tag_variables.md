@@ -42,7 +42,7 @@ User Variables describe information of the user who ran the tag command.
 <DiscordMessage
     author="Benny"
     bot={true}
-    avatar="https://bennybot.dev/icon.png"
+    avatar="https://benny.sh/icon.png"
     key={2}
 >
 
@@ -69,7 +69,7 @@ Have a nice day!
 <DiscordMessage
     author="Benny"
     bot={true}
-    avatar="https://bennybot.dev/icon.png"
+    avatar="https://benny.sh/icon.png"
     key={2}
 >
 

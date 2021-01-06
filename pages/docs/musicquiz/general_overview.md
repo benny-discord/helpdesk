@@ -15,7 +15,7 @@ Music Quiz is a fun module for your users to interact and have fun with one anot
 <DiscordMessage
     author="Benny"
     bot={true}
-    avatar="https://bennybot.dev/icon.png"
+    avatar="https://benny.sh/icon.png"
     key={1}
 >
 

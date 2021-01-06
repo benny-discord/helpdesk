@@ -29,7 +29,7 @@ Once you start the quiz, this message will be sent.
 <DiscordMessage
     author="Benny"
     bot={true}
-    avatar="https://bennybot.dev/icon.png"
+    avatar="https://benny.sh/icon.png"
     key={1}
 >
 
@@ -62,7 +62,7 @@ Years & Years
 <DiscordMessage
     author="Benny"
     bot={true}
-    avatar="https://bennybot.dev/icon.png"
+    avatar="https://benny.sh/icon.png"
     key={3}
 >
 
@@ -85,7 +85,7 @@ Years & Years Breathe
 <DiscordMessage
     author="Benny"
     bot={true}
-    avatar="https://bennybot.dev/icon.png"
+    avatar="https://benny.sh/icon.png"
     key={3}
 >
 
