@@ -73,7 +73,7 @@ Have a nice day!
     key={2}
 >
 
-Hey, <Mention>Discord User</Mention>! Did you know, that your **User ID** is 123456789012345678?<br />
+Hey, <DiscordMention>Discord User</DiscordMention>! Did you know, that your **User ID** is 123456789012345678?<br />
 Isn’t that cool? I also know this information about you:<br />
 Your **discriminator** is Discord User#0000 and your **Username** is Discord User.<br />
 You also have a cool avatar: https://cdn.discordapp.com/embed/avatars/0.png

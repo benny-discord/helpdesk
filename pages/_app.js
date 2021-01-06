@@ -10,7 +10,7 @@ import 'react-flexbox-grid/dist/react-flexbox-grid.css'
 
 // const DiscordMessage = dynamic( () => import('react-discord-message').then(r=>({DiscordMessage: r.DiscordMessage, DiscordMessages: r.DiscordMessages, Mention: r.Mention})), { ssr: false } )
 // console.log(DiscordMessage)
-import {DiscordMessages,DiscordEmbed,DiscordMessage,Mention,EmbedField} from 'react-discord-message'
+import {DiscordMessages,DiscordEmbed,DiscordMessage,DiscordMention} from 'react-discord-message'
 
 const components = {
     wrapper: props => (
@@ -39,7 +39,7 @@ const components = {
     DiscordMessages: DiscordMessages,
     DiscordMessage: DiscordMessage,
     DiscordEmbed: DiscordEmbed,
-    Mention: Mention
+    DiscordMention: DiscordMention
 }
 
 export default function Load({ Component, pageProps }) {

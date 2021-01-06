@@ -147,16 +147,16 @@ This is my message content. It supports **markdown**.
 ```
 
 ### Discord Mentions
-Inside your `<DiscordMessage>` components, you can have `<Mention>` components.
+Inside your `<DiscordMessage>` components, you can have `<DiscordMention>` components.
 > **type**: string
 >
 > Values: 'channel', 'role', 'user'
 >
 > Example: 
 >
-> `<Mention type="channel">channel-1</Mention>`
+> `<DiscordMention type="channel">channel-1</DiscordMention>`
 >
-> `<Mention type="user">Username</Mention>`
+> `<DiscordMention type="user">Username</DiscordMention>`
 
 ### Discord Embeds
 | Prop | Type | Optional | Default Value | Description |

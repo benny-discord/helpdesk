@@ -19,7 +19,7 @@ Music Quiz is a fun module for your users to interact and have fun with one anot
     key={1}
 >
 
-<DiscordEmbed slot="embeds" color="#1abc9c" title="Welcome to the Music Quiz" fields={[]}>
+<DiscordEmbed color="#1abc9c" title="Welcome to the Music Quiz">
 This is a fun game where I will play you a list of songs, and you have to guess what they are.<br />You will get 1 point if you guess the author of the song, 1 point if you guess the title, and 3 points if you guess both!<br />To guess, just write a message in this channel.
 </DiscordEmbed>
 
