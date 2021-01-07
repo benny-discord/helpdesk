@@ -3669,7 +3669,8 @@ rc@^1.2.7:
 
 "react-discord-message@git+https://github.com/Danktuary/react-discord-message.git":
   version "1.0.0"
-  resolved "git+https://github.com/Danktuary/react-discord-message.git#bba26adf887b8ace41429d1952aae7fa7bd710c2"
+  uid "9b35e27f42e744bb797d646d4ce4bc4ea9bf19ed"
+  resolved "git+https://github.com/Danktuary/react-discord-message.git#9b35e27f42e744bb797d646d4ce4bc4ea9bf19ed"
   dependencies:
     hex-to-rgba "^1.0.2"
 
