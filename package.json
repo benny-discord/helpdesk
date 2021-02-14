@@ -25,7 +25,7 @@
     "react-scroll": "^1.8.1",
     "react-tooltip": "^4.2.13",
     "remark-emoji": "^2.1.0",
-    "remark-kbd": "^1.0.21",
+    "remark-kbd": "^1.1.0",
     "remark-slug": "^6.0.0",
     "remark-toc": "^7.1.0",
     "remark-twemoji": "^0.1.1",
