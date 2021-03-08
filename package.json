@@ -22,7 +22,7 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-flexbox-grid": "^2.1.2",
-    "react-scroll": "^1.8.1",
+    "react-scroll": "^1.8.2",
     "react-tooltip": "^4.2.15",
     "remark-emoji": "^2.1.0",
     "remark-kbd": "^1.1.0",
