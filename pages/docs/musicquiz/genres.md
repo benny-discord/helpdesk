@@ -10,5 +10,4 @@ There will be between 100 and 250 songs in each genre.
 
 We aim to add more genres soon.
 - pop
-
-
+- metal
