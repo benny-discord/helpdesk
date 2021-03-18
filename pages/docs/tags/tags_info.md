@@ -21,7 +21,7 @@ Benny Tag ExampleTag
 <DiscordMessage
     author="Benny"
     bot={true}
-    avatar="https://bennybot.dev/icon.png"
+    avatar="https://benny.sh/icon.png"
     key={2}
 >
 
@@ -31,7 +31,7 @@ Benny Tag ExampleTag
 </DiscordMessages>
 
 # Features
-Benny's tags module offers amazing features to help you even more. You can customize these options in your server's [dashboard](https://bennybot.dev/dashboard). You can view articles of these features [here.](https://help.bennybot.dev/docs/tags)
+Benny's tags module offers amazing features to help you even more. You can customize these options in your server's [dashboard](https://benny.sh/dashboard). You can view articles of these features [here.](https://help.benny.sh/docs/tags)
 # Permissions
 For the Tags module to function correctly, it requires a list of permissions.
 <Alert style="info">Configuration: Server Settings > Roles > Benny</Alert>

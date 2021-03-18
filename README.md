@@ -1,6 +1,10 @@
 # How to write Benny Documentation
 Thanks to [Davien](https://github.com/RealSGII2) for designing our helpdesk.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/55522e7d-815b-4f84-a0d7-38bce81e5a9c/deploy-status)](https://app.netlify.com/sites/benny-helpdesk/deploys)
+
+[![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/benny-discord/benny-helpdesk)
+
 ## Writing a module
 To create your first module, copy and paste the **example-pages** folder into a new folder within the **docs** folder. The name of the folder is what the name of the module will be. You can name it anything URL compatible. This is what will be displayed in the URL. Then, open the index.js file inside of it. 
 
@@ -147,16 +151,16 @@ This is my message content. It supports **markdown**.
 ```
 
 ### Discord Mentions
-Inside your `<DiscordMessage>` components, you can have `<Mention>` components.
+Inside your `<DiscordMessage>` components, you can have `<DiscordMention>` components.
 > **type**: string
 >
 > Values: 'channel', 'role', 'user'
 >
 > Example: 
 >
-> `<Mention type="channel">channel-1</Mention>`
+> `<DiscordMention type="channel">channel-1</DiscordMention>`
 >
-> `<Mention type="user">Username</Mention>`
+> `<DiscordMention type="user">Username</DiscordMention>`
 
 ### Discord Embeds
 | Prop | Type | Optional | Default Value | Description |

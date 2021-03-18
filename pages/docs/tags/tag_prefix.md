@@ -21,7 +21,7 @@ A tag prefix can be used to speed up the amount of time it takes to send a tag. 
 <DiscordMessage
     author="Benny"
     bot={true}
-    avatar="https://bennybot.dev/icon.png"
+    avatar="https://benny.sh/icon.png"
     key={2}
 >
 

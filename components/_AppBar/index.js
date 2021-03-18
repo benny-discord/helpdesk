@@ -4,30 +4,30 @@ import Button from '../NButton'
 import Link from 'next/link'
 
 class AppBar extends Component {
-    render() {
-        return (
-            <div className={styles["appbar"]}>
-                <Link href="/">
-                    <span className={styles["title"]}>
-                        Benny
+	render() {
+		return (
+			<div className={styles["appbar"]}>
+				<Link href="/">
+					<span className={styles["title"]}>
+						Benny
 
                         <span className={styles["title-alt"]}>
-                            Help
+							Help
                         </span>
-                    </span>
-                </Link>
+					</span>
+				</Link>
 
-                <div className={styles["spacer"]}></div>
+				<div className={styles["spacer"]}></div>
 
-                <Button color="light" onClick={() => window.location.href = 'https://bennybot.dev/dashboard'}>
+				<Button color="light" onClick={() => window.location.href = 'https://benny.sh/dashboard'}>
 					Dashboard
                 </Button>
 				<Button color="destructive" hideable={true} onClick={() => window.open('https://github.com/BennyDiscord/benny-helpdesk', undefined, "noreferrer")}>
 					Contribute
                 </Button>
-            </div>
-        )
-    }
+			</div>
+		)
+	}
 }
 
 export default AppBar

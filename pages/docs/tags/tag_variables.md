@@ -42,7 +42,7 @@ User Variables describe information of the user who ran the tag command.
 <DiscordMessage
     author="Benny"
     bot={true}
-    avatar="https://bennybot.dev/icon.png"
+    avatar="https://benny.sh/icon.png"
     key={2}
 >
 
@@ -69,11 +69,11 @@ Have a nice day!
 <DiscordMessage
     author="Benny"
     bot={true}
-    avatar="https://bennybot.dev/icon.png"
+    avatar="https://benny.sh/icon.png"
     key={2}
 >
 
-Hey, <Mention>Discord User</Mention>! Did you know, that your **User ID** is 123456789012345678?<br />
+Hey, <DiscordMention>Discord User</DiscordMention>! Did you know, that your **User ID** is 123456789012345678?<br />
 Isn’t that cool? I also know this information about you:<br />
 Your **discriminator** is Discord User#0000 and your **Username** is Discord User.<br />
 You also have a cool avatar: https://cdn.discordapp.com/embed/avatars/0.png

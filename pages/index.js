@@ -42,7 +42,7 @@ export default function ({ props, categories }) {
                             Help Categories
                         </Button>
                     </Link>
-                    <Button color="light" onClick={() => window.location.href = 'https://bennybot.dev/dashboard'}>
+                    <Button color="light" onClick={() => window.location.href = 'https://benny.sh/dashboard'}>
                         Dashboard
                     </Button>
                 </div>

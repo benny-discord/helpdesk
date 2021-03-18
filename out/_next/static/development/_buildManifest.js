@@ -1,1 +1,0 @@
-self.__BUILD_MANIFEST = {"/_error":["static\u002Fchunks\u002Fpages\u002F_error.js"],"/docs/musicquiz":["static\u002Fchunks\u002Fpages\u002Fdocs\u002Fmusicquiz.js"],"/docs/musicquiz/playing_the_music_quiz":["static\u002Fchunks\u002Fpages\u002Fdocs\u002Fmusicquiz\u002Fplaying_the_music_quiz.js"]};self.__BUILD_MANIFEST_CB && self.__BUILD_MANIFEST_CB()
