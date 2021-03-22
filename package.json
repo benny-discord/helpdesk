@@ -10,7 +10,7 @@
     "deploy": "next build && next export"
   },
   "dependencies": {
-    "@danktuary/react-discord-message": "^1.0.0",
+    "@danktuary/react-discord-message": "^1.0.2",
 	"@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^10.0.9",
     "add": "^2.0.6",

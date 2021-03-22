@@ -228,10 +228,10 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@danktuary/react-discord-message@^1.0.0":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@danktuary/react-discord-message/-/react-discord-message-1.0.1.tgz#3e9d321764f63545dc035853682277a5437bb1c9"
-  integrity sha512-mUjA80gtk006WNCjmOyaiG7WYaZ/LLtCbcLk9yR3Kr+QdA9WY94l2QmNpTMIzZoZ39+H0VZe7pQ6Hm1rKASRfg==
+"@danktuary/react-discord-message@^1.0.2":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@danktuary/react-discord-message/-/react-discord-message-1.0.2.tgz#e4528f696a57eb940cc15e2412a0487650d634f1"
+  integrity sha512-dMpn9OnJvsH7zoPjRRTbOLD5q8s9yrNhL0MXyP1F9vs8FeJcV/KJ+gu+fUx+wecMiLUZdTdJaMN6K+GKbq9/IA==
   dependencies:
     "@babel/runtime" "^7.12.5"
     hex-to-rgba "^1.0.2"
