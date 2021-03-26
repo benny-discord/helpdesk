@@ -1912,10 +1912,10 @@ react-scroll@^1.8.2:
     lodash.throttle "^4.1.1"
     prop-types "^15.7.2"
 
-react-tooltip@^4.2.15:
-  version "4.2.15"
-  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.2.15.tgz#ae278931a222434ae597c57aab07be215a2aa5f9"
-  integrity sha512-xmVWi6N1qsrACiAquv28jhQ10igFbQX0Xk5rjSjgUPi9BAf8lCFhYpdFXe6NrEeuPrM7hdZkePa3eS2SrIRxIw==
+react-tooltip@^4.2.16:
+  version "4.2.16"
+  resolved "https://registry.yarnpkg.com/react-tooltip/-/react-tooltip-4.2.16.tgz#ffe33d2b943487c62cc3a15cc89300550027dd60"
+  integrity sha512-5e2kX23ao0iyEQBkddt87G1qV50/qQ3dXNIEVAZ1WMkgGlU1DetRU1Vf7dCLqZi4nVeuMcc1PKw5UQt61ViLFw==
   dependencies:
     prop-types "^15.7.2"
     uuid "^7.0.3"
