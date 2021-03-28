@@ -1,8 +1,6 @@
 # How to write Benny Documentation
 Thanks to [Davien](https://github.com/RealSGII2) for designing our helpdesk.
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/55522e7d-815b-4f84-a0d7-38bce81e5a9c/deploy-status)](https://app.netlify.com/sites/benny-helpdesk/deploys)
-
 [![Deploy](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/benny-discord/benny-helpdesk)
 
 ## Writing a module
