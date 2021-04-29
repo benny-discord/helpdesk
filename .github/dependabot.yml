@@ -1,0 +1,15 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 99
+  versioning-strategy: increase
+  ignore:
+  - dependency-name: "@next/mdx"
+    versions:
+    - 10.1.1
+  - dependency-name: next
+    versions:
+    - 10.1.0
