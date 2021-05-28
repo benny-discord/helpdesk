@@ -30,7 +30,7 @@
     "remark-toc": "^7.2.0",
     "remark-twemoji": "^0.1.1",
     "sass": "^1.34.0",
-    "twemoji": "^13.0.2",
+    "twemoji": "^13.1.0",
     "yarn": "^1.22.10"
   }
 }
