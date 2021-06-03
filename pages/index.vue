@@ -12,7 +12,12 @@
       <br /><br />
       <h2 style="text-align: center">Frequently Asked Questions</h2>
       <div class="articles-container">
-        <div class="article" v-for="article in articles" :key="article.slug" :class="{active}">
+        <div
+          class="article"
+          v-for="article in articles"
+          :key="article.slug"
+          :class="{ active }"
+        >
           <div class="article-title" @click="setActive(article.slug)">
             <span class="a-t">{{ article.title }}</span>
             <span class="a-desc">{{ article.description }}</span>
@@ -29,7 +34,7 @@
               y="0px"
               viewBox="0 0 64 64"
               class="article-svg"
-              :class="{active}"
+              :class="{ active }"
             >
               <g>
                 <path
@@ -43,7 +48,11 @@
               </g>
             </svg>
           </div>
-          <div class="article-body" :class="{active: active == article.slug}" :id="`article:${article.slug}`">
+          <div
+            class="article-body"
+            :class="{ active: active == article.slug }"
+            :id="`article:${article.slug}`"
+          >
             <nuxt-content :document="article" />
           </div>
         </div>
@@ -57,7 +66,7 @@ export default {
   data() {
     return {
       articles: [],
-      active: ''
+      active: '',
     }
   },
   async fetch() {
@@ -69,10 +78,18 @@ export default {
     })
   },
   methods: {
-    setActive(text){
-      this.active = (this.active == text) ? '' : text;
-    }
-  }
+    setActive(text) {
+      this.active = this.active == text ? '' : text
+      const e = document.getElementById(`article:${text}`)
+      if (e) {
+        if (e.style.maxHeight) {
+          e.style.maxHeight = null
+        } else {
+          e.style.maxHeight = (60 + e.scrollHeight) + 'px'
+        }
+      }
+    },
+  },
 }
 </script>
 
@@ -173,7 +190,7 @@ html {
   border: 1px solid #000;
   cursor: pointer;
   position: relative;
-  transition: all 0.4s;
+  transition: all 0.6s;
 }
 
 .article-body {
@@ -182,12 +199,12 @@ html {
   border-bottom-left-radius: 10px;
   border: none;
   padding: 0 20px;
+  max-height: 0;
   overflow: hidden;
-  height: 0
+  transition: max-height 0.6s ease-out;
 }
 
 .article-body.active {
-  height: auto;
   padding: 20px;
 }
 
@@ -239,7 +256,7 @@ html {
   transition: transform 0.4s;
 }
 
-.article-svg.active{
+.article-svg.active {
   transform: translateY(-50%);
 }
 </style>
