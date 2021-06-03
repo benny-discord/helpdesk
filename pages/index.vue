@@ -7,7 +7,7 @@
       <div class="title-container">
         <h1 class="title">Benny <span>Help</span></h1>
         <p>Got a question? We want to help</p>
-        <input type="text" placeholder="Find a question..." />
+        <input type="text" placeholder="Find an answer..." />
       </div>
       <br /><br />
       <h2 style="text-align: center">Frequently Asked Questions</h2>
