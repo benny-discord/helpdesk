@@ -163,8 +163,8 @@ html {
 .title-container {
   border-radius: 6px;
   padding: 50px 20px 40px;
-  background-color: #40c9dd;
-  color: #1e1e1e;
+  background-color: #5865F2;
+  color: #fff;
 }
 
 .title-container input {
