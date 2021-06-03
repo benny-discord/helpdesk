@@ -7,7 +7,7 @@
       <div class="title-container">
         <h1 class="title">Benny <span>Help</span></h1>
         <p>Got a question? We want to help</p>
-        <input type="text" placeholder="Find an answer..." />
+        <input type="text" placeholder="Find an answer..." v-model="searchValue" />
       </div>
       <br /><br />
       <h2 style="text-align: center">Frequently Asked Questions</h2>
@@ -67,6 +67,7 @@ export default {
     return {
       articles: [],
       active: '',
+      searchValue: '',
     }
   },
   async fetch() {
@@ -88,8 +89,14 @@ export default {
           e.style.maxHeight = (60 + e.scrollHeight) + 'px'
         }
       }
-    },
+    }
   },
+  watch: {
+    searchValue(text) {
+      console.log(text)
+      this.$router.push(`/${text.length ? '#' + encodeURIComponent(text) : ''}`)
+    }
+  }
 }
 </script>
 
