@@ -18,7 +18,7 @@
       <div class="articles-container">
         <div
           class="article"
-          v-for="article in articles"
+          v-for="article in articlesToShow"
           :key="article.slug"
           :class="{ active }"
         >
@@ -70,6 +70,7 @@ export default {
   data() {
     return {
       articles: [],
+      filteredArticles: [],
       active: '',
       searchValue: '',
     }
@@ -81,6 +82,12 @@ export default {
       if (!Array.isArray(ar.tags)) ar.tags = []
       return ar
     })
+  },
+  computed: {
+    articlesToShow() {
+      if (!this.searchValue.length) return this.articles
+      return this.filteredArticles
+    },
   },
   methods: {
     setActive(text) {
@@ -96,11 +103,12 @@ export default {
     },
   },
   watch: {
-    searchValue(text) {
+    async searchValue(text) {
       this.$router.push(`/${text.length ? '#' + encodeURIComponent(text) : ''}`)
+      this.filteredArticles = await this.$content().search(text).fetch()
     },
     '$route.hash'() {
-      const t = this.$route.hash.substring(1)
+      const t = decodeURIComponent(this.$route.hash.substring(1))
       if (t !== this.searchValue) this.searchValue = t
     },
   },
@@ -163,7 +171,7 @@ html {
 .title-container {
   border-radius: 6px;
   padding: 50px 20px 40px;
-  background-color: #5865F2;
+  background-color: #5865f2;
   color: #fff;
 }
 
