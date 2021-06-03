@@ -7,7 +7,11 @@
       <div class="title-container">
         <h1 class="title">Benny <span>Help</span></h1>
         <p>Got a question? We want to help</p>
-        <input type="text" placeholder="Find an answer..." v-model="searchValue" />
+        <input
+          type="text"
+          placeholder="Find an answer..."
+          v-model="searchValue"
+        />
       </div>
       <br /><br />
       <h2 style="text-align: center">Frequently Asked Questions</h2>
@@ -86,23 +90,23 @@ export default {
         if (e.style.maxHeight) {
           e.style.maxHeight = null
         } else {
-          e.style.maxHeight = (60 + e.scrollHeight) + 'px'
+          e.style.maxHeight = 60 + e.scrollHeight + 'px'
         }
       }
-    }
+    },
   },
   watch: {
     searchValue(text) {
       this.$router.push(`/${text.length ? '#' + encodeURIComponent(text) : ''}`)
     },
     '$route.hash'() {
-      const t = this.$route.hash.substring(1);
-      if(t !== this.searchValue) this.searchValue = t
-    }
+      const t = this.$route.hash.substring(1)
+      if (t !== this.searchValue) this.searchValue = t
+    },
   },
   mounted() {
-    this.searchValue = this.$route.hash.substring(1);
-  }
+    this.searchValue = this.$route.hash.substring(1)
+  },
 }
 </script>
 
@@ -148,7 +152,7 @@ html {
 }
 .navbar > span > span {
   margin-left: 8px;
-  color: hsla(0, 0%, 100%, 0.5);
+  color: #909090;
   font-weight: 400;
 }
 
@@ -160,6 +164,7 @@ html {
   border-radius: 6px;
   padding: 50px 20px 40px;
   background-color: #40c9dd;
+  color: #1e1e1e;
 }
 
 .title-container input {
