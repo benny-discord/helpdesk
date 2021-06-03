@@ -13,7 +13,7 @@
       <h2 style="text-align: center">Frequently Asked Questions</h2>
       <div class="articles-container">
         <div class="article" v-for="article in articles" :key="article.slug" :class="{active}">
-          <div class="article-title" @click="() => {active = (active == article.slug ? '' : article.slug)}">
+          <div class="article-title" @click="setActive(article.slug)">
             <span class="a-t">{{ article.title }}</span>
             <span class="a-desc">{{ article.description }}</span>
             <div v-if="article.tags.length" class="article-tags">
@@ -43,6 +43,9 @@
               </g>
             </svg>
           </div>
+          <div class="article-body" :class="{active: active == article.slug}" :id="`article:${article.slug}`">
+            <nuxt-content :document="article" />
+          </div>
         </div>
       </div>
     </div>
@@ -65,6 +68,11 @@ export default {
       return ar
     })
   },
+  methods: {
+    setActive(text){
+      this.active = (this.active == text) ? '' : text;
+    }
+  }
 }
 </script>
 
@@ -165,6 +173,33 @@ html {
   border: 1px solid #000;
   cursor: pointer;
   position: relative;
+  transition: all 0.4s;
+}
+
+.article-body {
+  background-color: #353535;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: none;
+  padding: 0 20px;
+  overflow: hidden;
+  height: 0
+}
+
+.article-body.active {
+  height: auto;
+  padding: 20px;
+}
+
+.article-body a {
+  text-decoration: underline;
+  font-weight: 600;
+  color: #eee;
+}
+
+.article-body p {
+  margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .article.active .article-title {
