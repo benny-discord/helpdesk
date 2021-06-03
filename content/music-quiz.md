@@ -2,9 +2,7 @@
 title: Music Quiz
 description: Benny's music quiz is a fun way to test your knowledge of a range of songs, covering various genres.
 tags: 
-  - these are tags
   - music quiz
-  - test
 ---
 
 ## What is the Music Quiz?

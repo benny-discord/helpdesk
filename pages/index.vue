@@ -219,6 +219,16 @@ html {
   margin-top: 5px;
 }
 
+.article-body p ~ ul {
+  margin-top: -15px;
+}
+
+.article-body p > code {
+  background-color: #555;
+  padding: 3px;
+  border-radius: 4px;
+}
+
 .article.active .article-title {
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
