@@ -93,9 +93,15 @@ export default {
   },
   watch: {
     searchValue(text) {
-      console.log(text)
       this.$router.push(`/${text.length ? '#' + encodeURIComponent(text) : ''}`)
+    },
+    '$route.hash'() {
+      const t = this.$route.hash.substring(1);
+      if(t !== this.searchValue) this.searchValue = t
     }
+  },
+  mounted() {
+    this.searchValue = this.$route.hash.substring(1);
   }
 }
 </script>
