@@ -15,7 +15,7 @@
       </div>
       <br /><br />
       <h2 style="text-align: center">Frequently Asked Questions</h2>
-      <div class="articles-container">
+      <div class="articles-container" v-if="articlesToShow.length">
         <div
           class="article"
           v-for="article in articlesToShow"
@@ -61,6 +61,7 @@
           </div>
         </div>
       </div>
+      <p class="no-articles-message" v-else>No articles could be found for "{{(searchValue && searchValue.length > 20) ? (searchValue.substring(0,17) + '...') : searchValue}}".</p>
     </div>
   </div>
 </template>
@@ -294,5 +295,12 @@ html {
 
 .article-svg.active {
   transform: translateY(-50%);
+}
+
+.no-articles-message {
+  text-align: center;
+  color: #ccc;
+  margin-top: 25px;
+  font-size: 19px;
 }
 </style>
