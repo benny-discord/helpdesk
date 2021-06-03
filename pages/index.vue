@@ -201,7 +201,7 @@ html {
   padding: 0 20px;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.6s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .article-body.active {

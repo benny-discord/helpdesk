@@ -4,5 +4,10 @@
   </div>
 </template>
 
-<style>
-</style>
+<script>
+export default {
+  mounted() {
+    if (this.$route.path !== '/') this.$router.push('/')
+  },
+}
+</script>

@@ -7,23 +7,27 @@ tags:
   - test
 ---
 
-## Writing content
+## What is the Music Quiz?
 
-Learn how to write your `content/`, supporting Markdown, YAML, CSV and JSON: https://content.nuxtjs.org/writing.
+The Music Quiz is a fun module for your users to interact and have fun with one another. It can be fast paced and challenging but that is what makes it fun. To use the music quiz, you can type `Benny start-quiz` while in a voice channel. It will join, and start the quiz after 5 seconds. Anyone in the voice channel may participate in the quiz, by typing the name of the song, or the name of the artist in the channel that the command was originally used in.
 
+You earn 1 point for getting the title of the song correct, 1 point for getting the author of the song correct, or 3 points for both. You have 30 seconds for each song. As soon as a user has guessed the title and artist of a song, nobody else can earn points for guessing it. This ensures that it's a competitive race between users!
 
-## Fetching content
+We currently support the following genres, each with 100-250 songs, and aim to add more soon:
+- metal
+- pop
 
-Learn how to fetch your content with `$content`: https://content.nuxtjs.org/fetching.
+To stop the quiz, simply run `Benny stop-quiz`, or wait until the 15 songs have finished playing.
 
+## Troubleshooting
 
-## Displaying content
+Benny require the following permissions to function properly:
 
-Learn how to display your Markdown content with the `<nuxt-content>` component directly in your template: https://content.nuxtjs.org/displaying.
+- Read Text Channels & See Voice Channels
+- Send Messages
+- Connect
+- Speak
+- Embed Links
+- Add Reactions
 
-
-```js
-this.exampleCodeBlock = function(h,j,i) {
-  return h(j+i)
-}
-```
+Still stuck? Head over to our [Support Server](https://benny.sh/support)
