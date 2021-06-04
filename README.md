@@ -8,7 +8,7 @@ Node 14+ required
 # install dependencies
 $ npm install
 
-# serve with hot reload at localhost:0000
+# serve with hot reload at localhost:9000
 $ npm run dev
 ```
 
