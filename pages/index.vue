@@ -61,7 +61,40 @@
           </div>
         </div>
       </div>
-      <p class="no-articles-message" v-else>No articles could be found for "{{(searchValue && searchValue.length > 20) ? (searchValue.substring(0,17) + '...') : searchValue}}".</p>
+      <p class="no-articles-message" v-else>
+        No articles could be found for "{{
+          searchValue && searchValue.length > 20
+            ? searchValue.substring(0, 17) + '...'
+            : searchValue
+        }}".
+      </p>
+
+      <div class="end-links">
+        <a
+          href="https://benny.sh/support"
+          target="_blank"
+          class="home-link"
+          style="background-color: #d13694"
+          rel="noopener"
+          >Support</a
+        >
+        <a
+          href="https://benny.sh/dashboard"
+          target="_blank"
+          class="home-link"
+          style="background-color: #dc3741"
+          rel="noopener"
+          >Dashboard</a
+        >
+        <a
+          href="https://github.com/benny-discord/helpdesk"
+          target="_blank"
+          class="home-link"
+          style="background-color: #5865f2"
+          rel="noopener"
+          >Contribute</a
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -302,5 +335,31 @@ html {
   color: #ccc;
   margin-top: 25px;
   font-size: 19px;
+}
+
+.end-links {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.home-link {
+  padding: 15px 20px;
+  margin: 5px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 480px) {
+  .home-link {
+    display: block;
+    margin-top: 15px;
+  }
 }
 </style>
