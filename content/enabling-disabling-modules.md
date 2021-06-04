@@ -2,13 +2,13 @@
 title: Enabling and Disabling modules 
 description: Benny's Economy system is a fun way to engage your members with the community and compete for first place in being the richest user!
 tags: 
-  - Enabling and disabling modules
-  - Dashboard
+  - enabling and disabling modules
+  - dashboard
   - configuration
   - website
 ---
 
-## What is the Counting?
+## How to enable and disable modules?
 
 The Counting is a fun module for your users to interact and have fun with one another. It can be fast paced and challenging but that is what makes it fun. To use the music quiz, you can type `Benny start-quiz` while in a voice channel. It will join, and start the quiz after 5 seconds. Anyone in the voice channel may participate in the quiz, by typing the name of the song, or the name of the artist in the channel that the command was originally used in.
 
@@ -20,15 +20,5 @@ We currently support the following genres, each with 100-250 songs, and aim to a
 
 To stop the quiz, simply run `Benny stop-quiz`, or wait until the 15 songs have finished playing.
 
-## Troubleshooting
 
-Benny require the following permissions to function properly:
-
-- Read Text Channels & See Voice Channels
-- Send Messages
-- Connect
-- Speak
-- Embed Links
-- Add Reactions
-
-Still stuck? Head over to our [Support Server](https://benny.sh/support)
+stuck? Head over to our [Support Server](https://benny.sh/support)

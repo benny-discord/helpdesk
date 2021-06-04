@@ -2,9 +2,9 @@
 title: Audit logs 
 description: Benny's Dashboard audit logs
 tags: 
-  - Audit logs
+  - audit logs
   - website
-  - Dashboard
+  - dashboard
 ---
 
 ## What is Audit logs?

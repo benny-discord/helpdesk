@@ -2,7 +2,7 @@
 title: Logging 
 description: Benny's Economy system is a fun way to engage your members with the community and compete for first place in being the richest user!
 tags: 
-  - Logging
+  - logging
 ---
 
 ## What is the Music Quiz?

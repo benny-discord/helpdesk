@@ -4,7 +4,7 @@ description: Benny's Dashboard settings
 tags: 
   - settings
   - website
-  - Dashboard
+  - dashboard
 ---
 
 ## What is settings?

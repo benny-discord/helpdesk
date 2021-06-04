@@ -2,7 +2,7 @@
 title: Voice Roles 
 description: Benny's Economy system is a fun way to engage your members with the community and compete for first place in being the richest user!
 tags: 
-  - Voice Roles
+  - voice roles
 ---
 
 ## What is the Music Quiz?
