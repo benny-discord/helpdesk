@@ -20,7 +20,7 @@
           class="article"
           v-for="article in articlesToShow"
           :key="article.slug"
-          :class="{ active }"
+          :class="{ active: active == article.slug }"
         >
           <div class="article-title" @click="setActive(article.slug)">
             <span class="a-t">{{ article.title }}</span>
@@ -38,7 +38,7 @@
               y="0px"
               viewBox="0 0 64 64"
               class="article-svg"
-              :class="{ active }"
+              :class="{ active: active == article.slug }"
             >
               <g>
                 <path
@@ -125,6 +125,14 @@ export default {
   },
   methods: {
     setActive(text) {
+      const oldText = this.active;
+      if(oldText && oldText.length && oldText !== text) {
+        const oldElem = document.getElementById(`article:${oldText}`);
+        if(oldElem) {
+          oldElem.style.maxHeight = null;
+        }
+      }
+
       this.active = this.active == text ? '' : text
       const e = document.getElementById(`article:${text}`)
       if (e) {
