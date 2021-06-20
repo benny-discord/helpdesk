@@ -50,7 +50,23 @@ export default {
       background_color: '#282828',
       theme_color: '#40C9DD',
       description: 'Got questions about Benny? The answers are here',
-      lang: 'en'
+      lang: 'en',
+      shortcuts: [
+        {
+          "name": "Support Server",
+          "short_name": "Support",
+          "url": "/support",
+        },
+        {
+          "name": "Dashboard",
+          "url": "/dashboard",
+        },
+        {
+          "name": "Write a guide",
+          "short_name": "Contribute",
+          "url": "/contribute",
+        }
+      ]
     },
     icon: {
       source: join(process.cwd(), 'static', 'icon.png')
