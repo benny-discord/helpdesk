@@ -12,7 +12,7 @@
     "@nuxt/content": "^1.14.0",
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.16.1",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.8"
   },
   "devDependencies": {
     "eslint-config-prettier": "^8.3.0",
