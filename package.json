@@ -11,12 +11,12 @@
   "dependencies": {
     "@nuxt/content": "^1.15.1",
     "@nuxtjs/pwa": "^3.3.5",
-    "core-js": "^3.20.3",
+    "core-js": "^3.22.8",
     "nuxt": "^2.15.8"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.5.1"
+    "prettier": "^2.6.2"
   }
 }
